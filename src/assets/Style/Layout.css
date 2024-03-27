@@ -13,27 +13,27 @@ body {
 
 h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   margin: 0;
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
   margin: 0;
-  font-size: 30px;
+  font-size: 27px;
+  font-family: "Roboto", sans-serif;
 }
 
 h3 {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  font-size: 25px;
+  margin: 10px;
+  font-size: 20px;
   text-align: center;
+  font-family: "Kode Mono", monospace;
 }
 
 p {
   font-family: "Roboto", sans-serif;
   margin: 0;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 a {
@@ -53,12 +53,11 @@ li {
 }
 
 button {
-  background: #3760a6;
+  background-color: #3760a6;
   color: #feca1b;
-  border-radius: 8px;
-  font-size: 20px;
-  align-items: center;
-  margin: 2px;
+  font-size: 25px;
+  border-radius: 15px;
+  margin: 15px;
 }
 
 /*Contenedor principal*/
@@ -101,6 +100,40 @@ button {
   color: #feca1b;
 }
 
+/*Cards grandes, salen del listado de pokemon*/
+.pokemonGrande {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid red;
+  color: #fafafa;
+  background: #b0b0b0;
+  margin-top: 20px;
+  width: 200px;
+  height: 300px;
+}
+
+.pokemonGrande p {
+  font-family: "Kode Mono", monospace;
+  font-size: 17px;
+}
+
+.pokemonGrande button {
+  background: #3760a6;
+  color: #feca1b;
+  border-radius: 15px;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.pokemonGrande img {
+  height: 200px;
+}
+
 /*Contenedor de favoritos*/
 .favoritos {
   height: calc(100vh - 120px);
@@ -112,7 +145,7 @@ button {
   font-size: 15px;
 }
 
-/*Este es el contenedor de las cards*/
+/*Este es el contenedor de las cards de Favoritos*/
 .listadofav {
   display: flex;
   flex-direction: row;
@@ -123,34 +156,39 @@ button {
   height: calc(100vh - 120px);
 }
 
-/*Estas son las cards*/
+/*Estas son las cards de Favoritos- chicas*/
 .listadofavorito {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
+  border: 4px solid #ef5350;
   margin: 10px;
   width: 150px;
   height: 200px;
   background-color: #b0b0b0;
+}
+
+.listadofavorito p {
+  font-family: "Kode Mono", monospace;
+  font-size: 13px;
   color: #fafafa;
+  margin: 5px;
 }
 
 /*Img dentro de las cards*/
-.img-pokemon {
+.listadofavorito img {
   width: 100px;
 }
 
-/*Este es el btn que elimina dentro de las cards*/
-.eliminar {
+.listadofavorito button {
   background-color: #3760a6;
   color: #feca1b;
-  font-size: 25px;
-  border-radius: 100%;
-  padding: 5px;
-  width: 40px;
-  height: 40px;
-  display: flex;
+  font-size: 20px;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  align-items: center;
   justify-content: center;
+  margin-bottom: 5px;
 }

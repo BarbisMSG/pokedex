@@ -5,7 +5,7 @@ function Home() {
   return (
     <>
       <div className="altura">
-        <h1>Pokedex</h1>
+        <h1>Pokedex de Barbis </h1>
         <img src="../public/Ash.webp" alt="" />
       </div>
     </>

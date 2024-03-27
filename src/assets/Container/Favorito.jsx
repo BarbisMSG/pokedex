@@ -3,7 +3,7 @@ import Contexto from "../Context/Contexto";
 import { useContext } from "react";
 
 function Favorito(props) {
-  const { name, img } = props;
+  const { name, img, types } = props;
 
   const { eliminamePokemon } = useContext(Contexto);
 
@@ -15,7 +15,8 @@ function Favorito(props) {
     <>
       <li className="listadofavorito">
         <p>{name}</p>
-        <img className="img-pokemon" src={img} alt="" />
+        <img src={img} alt="" />
+        <p>{types}</p>
         <button onClick={handleEliminar} className="eliminar">
           🗑
         </button>

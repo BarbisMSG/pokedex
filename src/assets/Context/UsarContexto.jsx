@@ -5,6 +5,7 @@ import { useReducer } from "react";
 
 function UsarContexto(props) {
   const { children } = props;
+
   const estadoInicial = {
     pokemones: [],
     favoritos: JSON.parse(localStorage.getItem("favoritos")) || [],

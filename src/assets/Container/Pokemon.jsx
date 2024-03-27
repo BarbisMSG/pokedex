@@ -27,6 +27,8 @@ function Pokemon() {
       name: pokemon.name,
       url: url,
       img: pokemon.sprites.other["official-artwork"].front_default,
+      types: pokemon.types[0].type.name,
+      weight: pokemon.weight,
     });
     alert("Felicitaciones! Agregaste a " + pokemon.name + " a tus Favoritos");
   };
@@ -38,12 +40,16 @@ function Pokemon() {
   return (
     <>
       <div className="altura">
-        <h3>{pokemon?.name}</h3>
-        <img
-          src={pokemon?.sprites.other["official-artwork"].front_default}
-          alt=""
-        />
-        <button onClick={handleGuardar}>⭐</button>
+        <h2>Pokemones</h2>
+        <div className="pokemonGrande">
+          <h3>{pokemon?.name.toUpperCase()}</h3>
+          <img
+            src={pokemon?.sprites.other["official-artwork"].front_default}
+            alt=""
+          />
+          <p>{pokemon?.types?.[0]?.type.name.toUpperCase()}</p>
+          <button onClick={handleGuardar}>⭐</button>
+        </div>
         <button onClick={volverAPokemon}>⬅</button>
       </div>
     </>
