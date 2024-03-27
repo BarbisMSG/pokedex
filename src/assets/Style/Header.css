@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #ef5350;
+  width: 100vw;
+  height: 60px;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  text-decoration: none;
+  margin: 10px;
+  color: white;
+}

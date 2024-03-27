@@ -1,0 +1,156 @@
+body {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-size: 25px;
+  text-align: center;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li {
+  list-style: none;
+  font-size: 15px;
+}
+
+button {
+  background: #3760a6;
+  color: #feca1b;
+  border-radius: 8px;
+  font-size: 20px;
+  align-items: center;
+  margin: 2px;
+}
+
+/*Contenedor principal*/
+.altura {
+  height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Este es el contenedor de Pokemones*/
+.listadopokemones {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 500px;
+}
+
+/*Listado de Pokemones*/
+.li-pokemones a {
+  margin: 10px;
+  width: 100px;
+  height: 20px;
+  border: 3px solid #b0b0b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #3760a6;
+  color: #fafafa;
+}
+
+.li-pokemones:hover {
+  transform: scale(1.1);
+}
+
+.li-pokemones:hover a {
+  border-radius: 5px;
+  color: #feca1b;
+}
+
+/*Contenedor de favoritos*/
+.favoritos {
+  height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  font-size: 15px;
+}
+
+/*Este es el contenedor de las cards*/
+.listadofav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+  height: calc(100vh - 120px);
+}
+
+/*Estas son las cards*/
+.listadofavorito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+  margin: 10px;
+  width: 150px;
+  height: 200px;
+  background-color: #b0b0b0;
+  color: #fafafa;
+}
+
+/*Img dentro de las cards*/
+.img-pokemon {
+  width: 100px;
+}
+
+/*Este es el btn que elimina dentro de las cards*/
+.eliminar {
+  background-color: #3760a6;
+  color: #feca1b;
+  font-size: 25px;
+  border-radius: 100%;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
